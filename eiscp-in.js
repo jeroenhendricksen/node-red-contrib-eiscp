@@ -45,7 +45,7 @@ module.exports = function (RED) {
         }
 
         node.receiveData = function (data) {
-            node.log('eiscp event data[' + data.toString('hex') + ']');
+            //node.log('eiscp event data[' + data.toString('hex') + ']');
             node.send({
                 topic: 'eiscp',
                 payload: data
